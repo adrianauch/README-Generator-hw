@@ -15,6 +15,7 @@ const questions = [
     message: "Please enter your email address.",
     name: "userEmail",
   },
+
   {
     type: "input",
     message: "What is the title of your project?",
@@ -61,12 +62,24 @@ const questions = [
     name: "license",
   },
 ];
+//then function
+inquirer.prompt(questions).then((data) => {
+  console.log(data);
+});
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//waiting to comment out function.
+
+function writeToFile(README, data) {
+  fs.writeToFile(README, data, (err) => {
+    if (err) {
+      console.log(err);
+    } else console.log("Success! Your README.md has been generated.");
+  });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
-init();
+// init();
