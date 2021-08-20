@@ -63,7 +63,6 @@ const questions = [
     name: "license",
   },
 ];
-//then function - down below
 // inquirer.prompt(questions).then((data) => {
 //   console.log(data);
 // });
@@ -72,20 +71,22 @@ const questions = [
 //waiting to comment out function.
 
 function writeToFile(filename, data) {
-  fs.writeToFile(filename, data, (err) => {
-    const markdown = generateMarkdown(data);
-    err
-      ? console.log(err)
-      : console.log("Success! Your README is being generated.");
-  });
+  return generateMarkdown(data);
 }
 
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((data) => {
-    writeToFile("README.md", data);
+    const markdownData = generateMarkdown(data);
+    writeToFile("README.md", markdownData, (err) => {
+      err
+        ? console.log(err)
+        : console.log(
+            "Success- Your file was created. Please see README.md to view your file"
+          );
+    });
   });
 }
 
 // Function call to initialize app
-// init();
+init();
