@@ -27,7 +27,7 @@ Please just comment them on this repository. https://github.com/adrianauch/READM
 
 ### Test Instructions
 
-Please make sure that you have downloaded and installed the nmp inquirer package to test the program.
+Please make sure that you have downloaded and installed the nmp inquirer package to test the program. You cannot already have a README.md file created for your project.
 
 ### Contact
 
