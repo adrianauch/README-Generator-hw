@@ -24,6 +24,8 @@ Example of VS code version:
 Example of README Preview
 ![picture of readme nicely formatted](assets/images/example2.png)
 
+deployed link: https://adrianauch.github.io/README-Generator-hw/
+
 ### Contribution
 
 Please just comment them on this repository. https://github.com/adrianauch/README-Generator-hw.
