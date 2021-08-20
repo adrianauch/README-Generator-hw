@@ -1,6 +1,10 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  for (const userlicense of choices) {
+    renderLicenseLink(userlicense);
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -19,6 +23,7 @@ function generateMarkdown(data) {
   -[Installation](#installation)
   -[Usage](#usage)
   -[Contribution](#contribution)
+  -[License] (#License)
   -[Test Instructions](#test-instructions)
   -[Contact Information](#conact-information)
 
@@ -34,6 +39,9 @@ function generateMarkdown(data) {
 
   ### Contribution
   ${data.contribution}
+
+  ### License
+  ${data.license}
 
   ### Test Instructions
   ${data.test}
