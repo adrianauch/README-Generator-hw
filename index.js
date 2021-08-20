@@ -25,7 +25,7 @@ const questions = [
   {
     type: "input",
     message: "Please write a breif decription for your project.",
-    name: "decription",
+    name: "description",
   },
   {
     type: "input",
@@ -59,7 +59,7 @@ const questions = [
   {
     type: "list",
     message: "What type of license does your project use?",
-    choices: ["MIT", "GNU", "GPLv3", "Mozilla Public", "Apache"],
+    choices: ["MIT", "GPLv3", "Mozilla Public License 2.0", "Apache 2.0"],
     name: "license",
   },
 ];

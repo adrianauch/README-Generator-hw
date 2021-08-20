@@ -51,12 +51,14 @@ function renderLicenseSection(license) {
 // User Data that makes up the README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ${renderLicenseLink(data.lisence)}
+
   ## Table of Contents
   -[Description](#description)
   -[Installation](#installation)
   -[Usage](#usage)
   -[Contribution](#contribution)
-  -[License] (#License)
+  -[License] 
   -[Test Instructions](#test-instructions)
   -[Contact Information](#conact-information)
 
